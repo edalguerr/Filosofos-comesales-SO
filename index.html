@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Procesos SO</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+
+    <header class="my-4">
+
+        <h2 class="text-center font-weight-bold text-secondary">Problema de los 5 filosofos comesales</h2>
+
+    </header>
+
+    <main class="container my-5">
+
+        <div class="alert alert-success my-3" role="alert">
+            <span class="font-weight-bold">Conceptos:</span><br>
+            -Planificaion de procesos, mediante Round robin y prioridad <br>
+            -Gestion de recursos compartidos(tenedores)
+        </div>
+
+        <!--Filosofos-->
+        <div class="row justify-content-center">
+
+            <div class="col-12 text-center pb-0">
+                <div class="bocadillo" id="comesal-1">
+                    El filosofo está comiendo
+                </div>
+                1<img src="./img/hombre.png" alt="" width="60">
+            </div>
+
+            <div class="container">
+                <div class="row justify-content-center">
+
+                    <div class="col-4 text-right pr-0 pt-2 pb-2">
+                        <div class="bocadillo bocadillo-2" id="comesal-2">
+                            La filosofa está comiendo
+                        </div>
+                        2 <img src="./img/chica.png" alt="" width="60">
+                    </div>
+
+                    <div class="col-3 bg-info rounded-top">
+
+                        <div class="row justify-content-around h-100">
+                            <img src="./img/espaguetis.png" alt="" width="32" class="col-2 p-0 align-self-center">
+                            <img src="./img/espaguetis.png" alt="" width="32" class="col-2 p-0 align-self-start">
+                            <img src="./img/espaguetis.png" alt="" width="32" class="col-2 p-0 align-self-center">
+                        </div>
+
+                    </div>
+
+                    <div class="col-4 text-left pl-0 pt-2 pb-2 ">
+                        <img src="./img/empresario.png" alt="" width="60"> 5
+                        <div class="bocadillo bocadillo-3" id="comesal-5">
+                            El filosofo está comiendo
+                        </div>
+                    </div>
+                    <div class="col-4 text-right pr-0 pb-2">
+                        <div class="bocadillo bocadillo-2" id="comesal-3">
+                            El filosofo está comiendo
+                        </div>
+                        3 <img src="./img/buzo.png" alt="" width="60">
+                    </div>
+
+                    <div class="col-3 bg-info rounded-bottom">
+                        <div class="row justify-content-around h-100 ">
+                            <img src="./img/espaguetis.png" alt="" width="32" class="col-2 p-0 align-self-center">
+                            <div class="col-2 p-0"></div>
+                            <img src="./img/espaguetis.png" alt="" width="32" class="col-2 p-0 align-self-center">
+                        </div>
+
+                    </div>
+
+                    <div class="col-4 text-left pl-0 pb-2 ">
+                        <img src="./img/azafata.png" alt="" width="60"> 4
+                        <div class="bocadillo bocadillo-3" id="comesal-4">
+                            La filosofa está comiendo
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div class="alert alert-success mt-3" role="alert">
+            Cinco filosofos sentados alrededor de una mesa distribuian su tiempo entre comer
+            y pensar, cada filosofo contaba con un tenedor. Necesitaban encontrar una forma de 
+            que todos cenaran, para lo cual requerian cada uno 2 de los 5 tenedores que habian 
+            disponibles. El metodo que emplearon para solucionar esta situacion fue la de distribuir
+            turnadamente de derecha a izquierda los tenedores de forma intercalada y determinando un tiempo
+            maximo que se durarian en rotar los tenedores hasta completar un ciclo, realizando
+            este proceso durante todo el tiempo que estuviesen en la mesa sin correr el peligro
+            de morir de hambre.
+        </div>
+
+        <div class="row justify-content-center mt-3 ">
+            <button class="btn btn-success col-3 mr-2" onclick="iniciar()">
+                Iniciar
+            </button>
+            <button class="btn btn-secondary col-3 ml-2" onclick="cancelar()">
+                Detener
+            </button>
+        </div>
+
+    </main>
+
+    
+    <script src="js/jquery.3.4.1.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
